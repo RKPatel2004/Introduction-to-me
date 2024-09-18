@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="rudra.css">
+    
+</head>
+<body>
+
+    <nav>
+        <ul class="navi">
+            <li><a class="navig" href="Home.html"style=" width=1000px;">Home</a></li>
+            <li><a class="navig"href="Hobbies.html"style= "width=1000px;">Hobbies</a></li>
+            <li><a class="navig"href="About me.html"style=" width=1000px;">About me</a></li>
+            <li><a class="navig"href="carousel.html"style=" width=1000px;">Carousel</a></li>
+            <li><a class="navig" href="form.html"style=" width=1000px;">Contact me</a></li>
+            <!-- <li class="abc"><input type="text" name="search" id="search" placeholder="search here..."></li> -->
+            <li><a class="navig" href="puzzle.html"style=" width=1000px;">Puzzle</a></li>
+        </ul>
+    </nav>
+
+    <h1 style="font-weight: 1000;text-align: center;color: white;">Fill the Feedback Form</h1><br><br>
+
+    <form action="submit.php" method="post">
+        <label for="firstname">First Name</label>
+        <input type="text" id="firstname" name="firstname" placeholder="enter firstname" required>
+  
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" name="lastname" placeholder="enter lastname" required>
+  
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="enter your email id" required>
+  
+        <label for="country">Country</label>
+        <select id="country" name="country" required>
+          <option value="">-- Please Select --</option>
+          <option value="United States">United States</option>
+          <option value="Canada">Canada</option>
+          <option value="United Kingdom">United Kingdom</option>
+          <option value="Australia">Australia</option>
+          <option value="India">India</option>
+          <option value="Other">Other</option>
+        </select>
+  
+        <label for="feedback">Feedback</label>
+        <textarea id="feedback" name="feedback" placeholder="write your feedback here" required></textarea>
+  
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </form><br><br><br>
+
+      <h1 style="text-align: center;color: white;font-weight: 1000;">Fill the Contact Form</h1><br><br>
+
+      <form action="submit.php" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="enter name" required>
+  
+        <label for="company">Company</label>
+        <input type="text" id="company" name="company">
+  
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="enter your email id" required>
+  
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="write here..." required></textarea>
+  
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </form><br><br><br>
+
+      <h1 style="text-align: center;color: white;font-weight: 1000;">give your comments</h1><br><br>
+      <br>
+      <form>
+        <label for="comments">Comments</label>
+        <textarea id="comments" name="comments" required></textarea>
+  
+        <label for="rating">Rating</label>
+        <input type="range" id="rating" name="rating" min="1" max="10" step="1" value="5">
+  
+        <div class="checkbox">
+          <input type="checkbox" id="confirm" name="confirm" required>
+          <label for="confirm">I confirm that this feedback is anonymous and cannot be traced back to me</label>
+        </div>
+  
+        <input type="submit" value="Submit">
+      </form>
+</body>
+</html>

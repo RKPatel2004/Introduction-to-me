@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin-top: -5px;
+    background-color: #b6c4ca;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: 0px;
+    background-size:cover;
+}
+
+.search{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.navi{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /* margin-top: 10px; */
+    margin-bottom: 10px;
+    background-color: black;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+li{
+    padding-left: 14px;
+    padding-right: 14px;
+    font-size: 20px; 
+    font-weight: 500;
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    height: 80px;
+    padding-bottom: 10px;
+}
+.nai{
+    margin-right: 10px;
+}
+.navig{
+    padding: 10px;
+    text-align: center;
+    display: block;
+    width: 100px;
+    overflow: hidden;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+.navig:hover{
+    background-color: green;
+}
+.navi .navig:hover{
+    color: black;
+    font-weight:800;
+}
+/*.abc{
+    margin-left: 35%;
+    padding-top: 10px;
+}
+#search{
+    height: 25px;
+    margin-top: 8px;
+}*/
+input{
+    padding-left: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.navig:active{
+    color:white;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 4px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+
+  body {
+    color: black;
+    /* background-color: rgb(241, 241, 241); */
+    text-align: center;
+    justify-content: center;
+ }
+ 
+ .dark-theme {
+    color: rgb(255, 255, 255); 
+    background-color: #1a1414;
+ }
+ button {
+    width: 13rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    background-color: aqua;
+    border: none;
+    border-radius: 12px;
+    margin-top: 38px;
+ }
+ p{
+    font-size: 1.2rem;
+ }
+

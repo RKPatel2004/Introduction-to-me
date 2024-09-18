@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="puzzle.css">
+</head>
+<body>
+    <nav>
+        <ul class="navi">
+            <li><a class="navig" href="Home.html"style=" width=1000px;">Home</a></li>
+            <li><a class="navig"href="Hobbies.html"style= "width=1000px;">Hobbies</a></li>
+            <li><a class="navig"href="About me.html"style=" width=1000px;">About me</a></li>
+            <li><a class="navig"href="carousel.html"style=" width=1000px;">Carousel</a></li>
+            <li><a class="navig" href="form.html"style=" width=1000px;">Contact me</a></li>
+            <li><a class="navig" href="puzzle.html"style=" width=1000px;">Puzzle</a></li>
+        </ul> 
+    </nav>
+
+    <center><h1>Jigsaw Puzzle</h1></center>
+    <div class="container">
+        <div class="box"ondrop="drop(event)" ondragover="allowDrop(event)" id="b1"></div>
+        <div class="box"ondrop="drop(event)" ondragover="allowDrop(event)" id="b2"></div>
+        <div class="box"ondrop="drop(event)" ondragover="allowDrop(event)" id="b3"></div>
+        <div class="box"ondrop="drop(event)" ondragover="allowDrop(event)" id="b4"></div>
+    </div>
+    <div class="container">
+        <div class="box"><img src="1.jpg" draggable="true" ondragstart="drag(event)" id="i1"></div>
+        <div class="box"><img src="01.jpg" draggable="true" ondragstart="drag(event)" id="i2"></div>
+        <div class="box"><img src="10.jpg" draggable="true" ondragstart="drag(event)" id="i3"></div>
+        <div class="box"><img src="11.jpg" draggable="true" ondragstart="drag(event)" id="i4"></div>
+    </div>
+
+      <script>
+        function allowDrop(ev) {
+          ev.preventDefault();
+        }
+        
+        function drag(ev) {
+          ev.dataTransfer.setData("text", ev.target.id);
+        }
+        
+        function drop(ev) {
+          ev.preventDefault();
+          var data = ev.dataTransfer.getData("text");
+          ev.target.appendChild(document.getElementById(data));
+        }
+        </script>
+</body>
+</html>

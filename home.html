@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="rudra.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <nav>
+        <ul class="navi">
+            <li><a class="navig" href="Home.html"style=" width=1000px;">Home</a></li>
+            <li><a class="navig"href="Hobbies.html"style= "width=1000px;">Hobbies</a></li>
+            <li><a class="navig"href="About me.html"style=" width=1000px;">About me</a></li>
+            <li><a class="navig"href="carousel.html"style=" width=1000px;">Carousel</a></li>
+            <li><a class="navig" href="form.html"style=" width=1000px;">Contact me</a></li>
+            <li><a class="navig" href="puzzle.html"style=" width=1000px;">Puzzle</a></li>
+
+            <button onclick = "changeMode()" id = "button"> Dark Mode </button>
+    <script>
+      function changeMode() {
+         var body = document.body;
+         var box  = document.querySelector(".Box");
+         var footer = document.querySelector("footer");
+         // toggle the theme
+         body.classList.toggle("dark-theme");
+         box.classList.toggle("dark-theme");
+         footer.classList.toggle("dark-theme");
+         let button = document.getElementById('button');
+         
+         // change the button text
+         if (button.innerHTML == "Dark Mode") {
+            button.innerHTML = "Normal Mode";
+         } else {
+            button.innerHTML = "Dark Mode"
+         }
+      }
+   </script>
+
+        </ul> 
+    </nav>
+        <div class="container">
+        <h1 style="font-size:60px" class="home">Welcome to Home Page</h1>
+        <img src="patel.png" height="400px" width="400px">
+        <p class="Box">Hii...<br> I am Rudra K. Patel and pursuing my Btech in Computer Engineering from Dharmsinh Desai University(DDU).This is my first website. I am from Surat.</p>
+
+        <footer>
+            <div class="social-icons">
+              <a href="https://instagram.com/rudrapatel0454?igshid=ZGUzMzM3NWJiOQ=="><i class="fab fa-instagram"></i></a>
+              <a href="https://wa.me/qr/J2WR5XR2KNCVC1"><i class="fab fa-whatsapp"></i></a>
+              <a href="https://www.linkedin.com/in/rudra-patel-4b089b271"><i class="fab fa-linkedin"></i></a>
+              <a href="https://rudra0405@gmail.com"><i class="far fa-envelope"></i></a>
+            </div>
+              <p style="color:white;font-size:20px;font-weight: bolder;font-family: Verdana, Geneva, Tahoma, sans-serif;">created by Rudra Patel</p>
+              <p style="color:white;font-size:13px;font-weight: bolder;font-family: Verdana, Geneva, Tahoma, sans-serif;">&copy; ----All Rights Reserved</p>
+          </footer>
+
+
+          
+</body>
+</html>
